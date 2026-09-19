@@ -307,6 +307,7 @@ Open **http://localhost:3000**. You're in the Operator Terminal.
 │   ├── DEMO-SCRIPT.md      # timed 3-minute live stage script + fallback plan
 │   ├── VIDEO-SCRIPT.md     # shot-by-shot script for the submission video
 │   ├── JUDGE-PITCH.md      # 30-sec pitch, per-sponsor framing, Q&A crib
+│   ├── N8N-GUIDE.md        # n8n judge guide: workflows + live-demo steps
 │   ├── deck-slides/        # extracted slide images
 │   └── screenshots/        # the images in this README
 ├── PROGRESS.md             # build tracker + design-evaluation record

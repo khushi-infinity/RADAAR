@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+
+  /* display font stack (money theme swaps to banking serif) */
+  --font-display: Sora, Inter, system-ui, sans-serif;
+
+  /* ─── Theme tokens (runtime-swappable) ─────────────────────────────── */
+  /* default = "radar" — deep-space command center */
+  --bg-page: #04070f;
+  --bg-page-rgb: 4 7 15;
+  --bg-glow-1: rgba(0, 185, 245, 0.15);
+  --bg-glow-2: rgba(4, 226, 181, 0.08);
+  --bg-glass: rgba(255, 255, 255, 0.04);
+  --bg-glass-hover: rgba(255, 255, 255, 0.06);
+  --bg-chip: rgba(255, 255, 255, 0.05);
+  --bg-input: rgba(7, 12, 24, 0.6);
+  --border-glass: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(0, 185, 245, 0.4);
+  --text-hi: #f1f5f9;
+  --text-hi-rgb: 241 245 249;
+  --text-body: #cbd5e1;
+  --text-body-rgb: 203 213 225;
+  --text-mid: #94a3b8;
+  --text-mid-rgb: 148 163 184;
+  --text-low: #74849b;
+  --text-low-rgb: 116 132 155;
+  --text-faint: #475569;
+  --text-faint-rgb: 71 85 105;
+  --accent: #00d4ff;
+  --accent-rgb: 0 212 255;
+  --accent-strong: #00b9f5;
+  --accent-strong-rgb: 0 185 245;
+  --positive: #22e5a0;
+  --positive-rgb: 34 229 160;
+  --negative: #ff5d7a;
+  --negative-rgb: 255 93 122;
+  --warning: #ffb547;
+  --warning-rgb: 255 181 71;
+  --shadow-glass: 0 8px 32px rgba(0, 185, 245, 0.08), inset 0 1px 0 rgba(255,255,255,0.06);
+  --shadow-glow: 0 0 24px rgba(0, 212, 255, 0.35);
+  --bg-overlay: rgba(255, 255, 255, 0.055);
+  --bg-overlay-hover: rgba(255, 255, 255, 0.1);
+  --border-chip: rgba(255, 255, 255, 0.12);
+  --grid-line: 27 58 102;
+  --grid-spoke: 20 41 74;
+  --sweep: 0 185 245;
+  --sweep-edge: 0 212 255;
+  --floor: 10 26 51;
+}
+
+/* ─── Theme: MONEY — "wealth terminal" ────────────────────────────────── */
+/* dark forest/charcoal + gold + rising-green; feels like a private banking app */
+[data-theme="money"] {
+  --font-display: Georgia, "Times New Roman", serif;
+  --bg-page: #0a0d0a;
+  --bg-page-rgb: 10 13 10;
+  --bg-glow-1: rgba(212, 175, 55, 0.10);
+  --bg-glow-2: rgba(46, 204, 113, 0.07);
+  --bg-glass: rgba(255, 255, 255, 0.035);
+  --bg-glass-hover: rgba(212, 175, 55, 0.05);
+  --bg-chip: rgba(255, 255, 255, 0.05);
+  --bg-input: rgba(12, 16, 12, 0.7);
+  --border-glass: rgba(212, 175, 55, 0.14);
+  --border-hover: rgba(212, 175, 55, 0.45);
+  --text-hi: #f5f2e8;
+  --text-hi-rgb: 245 242 232;
+  --text-body: #d6d2c4;
+  --text-body-rgb: 214 210 196;
+  --text-mid: #a8a394;
+  --text-mid-rgb: 168 163 148;
+  --text-low: #8a8778;
+  --text-low-rgb: 138 135 120;
+  --text-faint: #6f6d60;
+  --text-faint-rgb: 111 109 96;
+  --accent: #e3c05a;
+  --accent-rgb: 227 192 90;
+  --accent-strong: #d4af37;
+  --accent-strong-rgb: 212 175 55;
+  --positive: #2ecc71;
+  --positive-rgb: 46 204 113;
+  --negative: #ff6b6b;
+  --negative-rgb: 255 107 107;
+  --warning: #e67e22;
+  --warning-rgb: 230 126 34;
+  --shadow-glass: 0 8px 32px rgba(212, 175, 55, 0.07), inset 0 1px 0 rgba(255,255,255,0.05);
+  --shadow-glow: 0 0 24px rgba(212, 175, 55, 0.3);
+  --bg-overlay: rgba(227, 192, 90, 0.07);
+  --bg-overlay-hover: rgba(227, 192, 90, 0.13);
+  --border-chip: rgba(227, 192, 90, 0.18);
+  --grid-line: 90 76 34;
+  --grid-spoke: 60 51 24;
+  --sweep: 212 175 55;
+  --sweep-edge: 227 192 90;
+  --floor: 22 20 10;
+}
+
+/* ─── Theme: HERITAGE — "Paytm by daylight" ───────────────────────────── */
+/* light, airy, navy-on-white with Paytm blue; feels like the Paytm consumer app */
+[data-theme="heritage"] {
+  color-scheme: light;
+  --bg-page: #f4f7fb;
+  --bg-page-rgb: 244 247 251;
+  --bg-glow-1: rgba(0, 185, 245, 0.12);
+  --bg-glow-2: rgba(0, 100, 220, 0.05);
+  --bg-glass: rgba(255, 255, 255, 0.75);
+  --bg-glass-hover: rgba(255, 255, 255, 0.95);
+  --bg-chip: rgba(15, 40, 80, 0.05);
+  --bg-input: rgba(255, 255, 255, 0.9);
+  --border-glass: rgba(15, 40, 80, 0.1);
+  --border-hover: rgba(0, 150, 220, 0.45);
+  --text-hi: #0b1c33;
+  --text-hi-rgb: 11 28 51;
+  --text-body: #243b55;
+  --text-body-rgb: 36 59 85;
+  --text-mid: #51617a;
+  --text-mid-rgb: 81 97 122;
+  --text-low: #5d6f89;
+  --text-low-rgb: 93 111 137;
+  --text-faint: #7d8ca3;
+  --text-faint-rgb: 125 140 163;
+  --accent: #0072a8;
+  --accent-rgb: 0 114 168;
+  --accent-strong: #0088cc;
+  --accent-strong-rgb: 0 136 204;
+  --positive: #067a45;
+  --positive-rgb: 6 122 69;
+  --negative: #c23a57;
+  --negative-rgb: 194 58 87;
+  --warning: #a86010;
+  --warning-rgb: 168 96 16;
+  --shadow-glass: 0 8px 28px rgba(11, 28, 51, 0.08);
+  --shadow-glow: 0 0 22px rgba(0, 160, 235, 0.25);
+  --bg-overlay: rgba(11, 28, 51, 0.055);
+  --bg-overlay-hover: rgba(11, 28, 51, 0.1);
+  --border-chip: rgba(11, 28, 51, 0.15);
+  --grid-line: 190 205 222;
+  --grid-spoke: 205 216 230;
+  --sweep: 0 185 245;
+  --sweep-edge: 0 136 204;
+  --floor: 232 240 248;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-body);
+  @apply antialiased;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, var(--bg-glow-1), transparent),
+    radial-gradient(ellipse 60% 40% at 80% 110%, var(--bg-glow-2), transparent);
+  background-attachment: fixed;
+}
+
+@layer components {
+  .glass {
+    background: var(--bg-glass);
+    border: 1px solid var(--border-glass);
+    box-shadow: var(--shadow-glass);
+    backdrop-filter: blur(18px);
+    border-radius: 1rem;
+  }
+  .glass-hover {
+    transition: all 0.3s ease;
+  }
+  .glass-hover:hover {
+    border-color: var(--border-hover);
+    background: var(--bg-glass-hover);
+  }
+  .kpi-label {
+    @apply text-[11px] font-medium uppercase tracking-widest;
+    color: var(--text-low);
+  }
+  .text-hi { color: var(--text-hi); }
+  .text-body { color: var(--text-body); }
+  .text-mid { color: var(--text-mid); }
+  .text-low { color: var(--text-low); }
+  .text-accent { color: var(--accent); }
+  .bg-chip { background: var(--bg-chip); }
+  .bg-input { background: var(--bg-input); }
+  .border-glass { border-color: var(--border-glass); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+}
+
+/* ---- theme-agnostic overlay/border primitives ---- */
+/* intentionally UNLAYERED so they override tailwind utilities in the cascade */
+.bg-overlay { background: var(--bg-overlay); }
+.bg-overlay-hover { background: var(--bg-overlay-hover); }
+.bg-divider { background: var(--border-chip); }
+.chip-border { border-color: var(--border-chip); }
+
+/* ---- radar ping rings ---- */
+@keyframes radar-ping {
+  0% { transform: scale(0.4); opacity: 0.9; }
+  80%, 100% { transform: scale(2.2); opacity: 0; }
+}
+.ping-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  border: 2px solid currentColor;
+  animation: radar-ping 2.4s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+}
+.ping-ring-delay-1 { animation-delay: 0.8s; }
+
+/* ---- slim scrollbars ---- */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-glass); border-radius: 8px; }

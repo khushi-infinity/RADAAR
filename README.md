@@ -309,6 +309,7 @@ Open **http://localhost:3000**. You're in the Operator Terminal.
 │   ├── JUDGE-PITCH.md      # 30-sec pitch, per-sponsor framing, Q&A crib
 │   ├── N8N-GUIDE.md        # n8n judge guide: workflows + live-demo steps
 │   ├── COGNEE-GUIDE.md     # Cognee judge guide: memory graph + live-demo steps
+│   ├── SARVAM-GUIDE.md     # Sarvam judge guide: voice loop + live-demo steps
 │   ├── deck-slides/        # extracted slide images
 │   └── screenshots/        # the images in this README
 ├── PROGRESS.md             # build tracker + design-evaluation record

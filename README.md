@@ -313,6 +313,7 @@ Open **http://localhost:3000**. You're in the Operator Terminal.
 │   ├── PAYTM-GUIDE.md      # Paytm judge guide: business case, scale & impact
 │   ├── deck-slides/        # extracted slide images
 │   └── screenshots/        # the images in this README
+├── scripts/make-deck.ts    # business-judges pitch deck generator (npm run deck → docs/RADAAR-Business-Pitch.pptx)
 ├── PROGRESS.md             # build tracker + design-evaluation record
 └── README.md
 ```

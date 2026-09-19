@@ -304,7 +304,9 @@ Open **http://localhost:3000**. You're in the Operator Terminal.
 │   └── wav.ts              #   client-side webm→WAV for Sarvam STT
 ├── docs/
 │   ├── PRODUCT-SPEC.md     # distilled spec from the official deck
-│   ├── DEMO-SCRIPT.md      # timed 3-minute judge script + fallback plan
+│   ├── DEMO-SCRIPT.md      # timed 3-minute live stage script + fallback plan
+│   ├── VIDEO-SCRIPT.md     # shot-by-shot script for the submission video
+│   ├── JUDGE-PITCH.md      # 30-sec pitch, per-sponsor framing, Q&A crib
 │   ├── deck-slides/        # extracted slide images
 │   └── screenshots/        # the images in this README
 ├── PROGRESS.md             # build tracker + design-evaluation record
